@@ -20,7 +20,7 @@ io.on("connection", (socket) => { //connectionで受け取りサーバーにク�
   });
 });
 
-server.listen(PORT, () => {
+server.listen(process.env.PORT || 3000, () => {
   console.log('listening on 3000');
 });
 
